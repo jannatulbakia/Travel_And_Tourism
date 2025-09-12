@@ -20,11 +20,7 @@ export default function NavBar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             <li><Link href="/">Home</Link></li>
             <li>
-              <a>Destination</a>
-              <ul className="p-2">
-                <li><Link href="/submenu1">Submenu 1</Link></li>
-                <li><Link href="/submenu2">Submenu 2</Link></li>
-              </ul>
+              <Link href="/destination">Destination</Link>
             </li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/helplines">Helplines</Link></li>
@@ -37,14 +33,8 @@ export default function NavBar() {
         <ul className="menu menu-horizontal px-1">
           <li><Link href="/">Home</Link></li>
           <li>
-            <details>
-              <summary>Destination</summary>
-              <ul className="p-2">
-                <li><Link href="/submenu1">Submenu 1</Link></li>
-                <li><Link href="/submenu2">Submenu 2</Link></li>
-              </ul>
-            </details>
-          </li>
+              <Link href="/destination">Destination</Link>
+            </li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/helplines">Helplines</Link></li>
         </ul>

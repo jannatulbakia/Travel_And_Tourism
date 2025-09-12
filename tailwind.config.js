@@ -8,5 +8,5 @@ export const content = [
 export const theme = { extend: {} };
 export const plugins = [require("daisyui")];
 export const daisyui = {
-    themes: ["light", "dark"],
+    themes: ["light"],
 };
