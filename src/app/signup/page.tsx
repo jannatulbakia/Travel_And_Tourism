@@ -3,7 +3,8 @@
 import { useState } from "react";
 
 export default function SignupPage() {
-  const [name, setName] = useState("");
+  const [fname, setFirstName] = useState("");
+  const [lname, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -32,8 +33,8 @@ export default function SignupPage() {
           <div>
             <input
               type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={fname}
+              onChange={(e) => setFirstName(e.target.value)}
               className="w-full rounded-xl border border-gray-300 bg-white/70 px-4 py-2 text-gray-800 placeholder-gray-400 focus:border-purple-400 focus:ring-2 focus:ring-purple-200"
               placeholder="First Name"
               required
@@ -43,8 +44,8 @@ export default function SignupPage() {
           <div>
             <input
               type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={lname}
+              onChange={(e) => setLastName(e.target.value)}
               className="w-full rounded-xl border border-gray-300 bg-white/70 px-4 py-2 text-gray-800 placeholder-gray-400 focus:border-purple-400 focus:ring-2 focus:ring-purple-200"
               placeholder="Last Name"
               required
